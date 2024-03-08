@@ -23,7 +23,7 @@ db.mongoose
   .connect(db.url, mongooseConfig)
   .then(() => console.log("berhasil connect"))
   .catch((err) => {
-    console.log("berhasil connect");
+    console.log("gagal connect");
     process.exit();
   });
 
