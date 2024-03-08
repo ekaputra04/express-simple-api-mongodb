@@ -27,10 +27,8 @@ db.mongoose
     process.exit();
   });
 
-// membuat route
-app.get("/", (req, res) => {
-  res.json({ message: "Hello Eka" });
-});
+// memanggil route mahasiswa
+require("./app/routes/mahasiswa.route")(app);
 
 app.listen(PORT, () => {
   console.log("server start on port " + PORT);
